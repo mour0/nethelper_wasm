@@ -1,0 +1,16 @@
+[package]
+name = "nethelper_wasm"
+version = "0.1.0"
+authors = ["mour0 <malentacchimaurizio19@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+netcalc = { path = "../netcalc" }
+wasm-bindgen = "0.2.81"
+js-sys = "0.3.58"
+num-format = "0.4.0"
